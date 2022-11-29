@@ -1,6 +1,7 @@
 for fl in $( ls *.py)
 do
- echo "ipynb-py-convert $fl $fl.ipynb"
- ipynb-py-convert $fl $fl.ipynb
+ fone="${fl%.*}"
+ echo "ipynb-py-convert $fl $fone.ipynb"
+ ipynb-py-convert $fl $fone.ipynb
 done
 exit 0
